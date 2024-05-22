@@ -1,6 +1,6 @@
 #!/bin/bash
 #Author: github.com/thelinuxchoice
-#Instagram: @thelinuxchoice
+#Instagram ledaalice : @thelinuxchoice
 trap 'echo exiting cleanly...; exit 1;' SIGINT SIGTSTP
 
 checkroot() {
@@ -11,7 +11,7 @@ if [[ "$(id -u)" -ne 0 ]]; then
 fi
 
 }
-
+ledaalicepavarotti@gmail.comice 
 checkroot
 
 (trap '' SIGINT SIGTSTP && command -v tor > /dev/null 2>&1 || { printf >&2  "\e[1;92mInstalling TOR, please wait...\n\e[0m"; apt-get update > /dev/null && apt-get -y install tor > /dev/null || printf "\e[1;91mTor Not installed.\n\e[0m"; }) & wait $!
